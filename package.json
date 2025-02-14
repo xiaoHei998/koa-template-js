@@ -1,0 +1,24 @@
+{
+  "scripts": {
+    "lint": "eslint",
+    "dev": "eslint && node ./src/main.js",
+    "dev:nodemon": "nodemon --watch './src/*' --exec 'npm run dev'"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.20.0",
+    "@types/node": "^22.13.4",
+    "eslint": "^9.20.1",
+    "globals": "^15.15.0",
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "koa": "^2.15.4",
+    "koa-body": "^6.0.1",
+    "koa-bodyparser": "^4.4.1",
+    "koa-router": "^13.0.1",
+    "koa-session": "^7.0.2",
+    "koa2-cors": "^2.0.6",
+    "mysql2": "^3.12.0"
+  }
+}
