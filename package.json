@@ -2,11 +2,13 @@
   "scripts": {
     "lint": "eslint",
     "dev": "eslint && node ./src/main.js",
-    "dev:nodemon": "nodemon --watch './src/*' --exec 'npm run dev'"
+    "dev:nodemon": "cross-env NODE_ENV=development nodemon --watch ./src/* --exec npm run dev",
+    "pro": "cross-env NODE_ENV=production node ./src/main.js"
   },
   "devDependencies": {
     "@eslint/js": "^9.20.0",
     "@types/node": "^22.13.4",
+    "cross-env": "^7.0.3",
     "eslint": "^9.20.1",
     "globals": "^15.15.0",
     "nodemon": "^3.1.9"
